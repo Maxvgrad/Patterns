@@ -1,4 +1,4 @@
-package org.study.patterns.creational.factorymethod;
+package org.study.developers;
 
 public class CppDeveloper implements Developer {
 
