@@ -1,6 +1,6 @@
 package org.study.patterns.creational.factorymethod;
 
-import org.study.developers.Developer;
+import org.study.entities.developers.Developer;
 import org.study.patterns.Pattern;
 import org.study.utils.ProgrammingLanguage;
 import static org.study.utils.ProgrammingLanguage.*;

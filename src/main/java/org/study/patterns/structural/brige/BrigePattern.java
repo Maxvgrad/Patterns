@@ -1,7 +1,7 @@
 package org.study.patterns.structural.brige;
 
-import org.study.developers.CppDeveloper;
-import org.study.developers.JavaDeveloper;
+import org.study.entities.developers.CppDeveloper;
+import org.study.entities.developers.JavaDeveloper;
 import org.study.patterns.Pattern;
 
 import java.util.Arrays;

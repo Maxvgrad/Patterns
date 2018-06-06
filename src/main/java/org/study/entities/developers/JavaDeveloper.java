@@ -1,4 +1,4 @@
-package org.study.developers;
+package org.study.entities.developers;
 
 public class JavaDeveloper implements Developer {
 

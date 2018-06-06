@@ -2,7 +2,8 @@ package org.study.utils;
 
 public enum Patterns {
 
-    FACTORY_METHOD("Factory method"), BRIGE("Brige"), SINGLETON("Singleton");
+    FACTORY_METHOD("Factory method"), SINGLETON("Singleton"), BUILDER("Builder"),
+    BRIGE("Brige");
 
     Patterns(String name){
         this.name = name;

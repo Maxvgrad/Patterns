@@ -1,6 +1,6 @@
 package org.study.patterns.structural.brige;
 
-import org.study.developers.Developer;
+import org.study.entities.developers.Developer;
 
 public abstract class Programm {
     protected Developer developer;
