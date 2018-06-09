@@ -5,7 +5,7 @@ public enum Patterns {
     FACTORY_METHOD("Factory method"), SINGLETON("Singleton"), BUILDER("Builder"),
     PROTOTYPE("Prototype"),
 
-    BRIGE("Brige"), ADAPTER("Adapter");
+    BRIGE("Brige"), ADAPTER("Adapter"), COMPOSITE("Composite");
 
     Patterns(String name){
         this.name = name;
