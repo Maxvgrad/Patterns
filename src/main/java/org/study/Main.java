@@ -7,7 +7,7 @@ import static org.study.utils.Patterns.*;
 
 public class Main {
     public static void main(String[] args) {
-        Pattern pattern = PatternsFactory.createPattern(COMPOSITE);
+        Pattern pattern = PatternsFactory.createPattern(FACADE);
         pattern.execute();
     }
 }

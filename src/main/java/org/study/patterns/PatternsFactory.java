@@ -7,6 +7,7 @@ import org.study.patterns.creational.singleton.SingletonPattern;
 import org.study.patterns.structural.adapter.AdapterPattern;
 import org.study.patterns.structural.brige.BrigePattern;
 import org.study.patterns.structural.composite.CompositePattern;
+import org.study.patterns.structural.facade.FacadePattern;
 import org.study.utils.Patterns;
 
 public class PatternsFactory {
@@ -21,6 +22,7 @@ public class PatternsFactory {
             case PROTOTYPE: return new PrototypePattern();
             case ADAPTER: return new AdapterPattern();
             case COMPOSITE: return new CompositePattern();
+            case FACADE: return new FacadePattern();
             default: throw new IllegalArgumentException(
                     "Pattern '" + pattern + "' is not found.");
         }

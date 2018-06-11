@@ -13,7 +13,7 @@ public class FactoryMethodPattern implements Pattern {
         developer.writeCode();
     }
 
-    static DeveloperFactory createDeveloperFactory (ProgrammingLanguage pl) {
+    public static DeveloperFactory createDeveloperFactory (ProgrammingLanguage pl) {
         switch(pl) {
             case JAVA: return new JavaDeveloperFactory();
             case CPP: return new CppDeveloperFactory();
