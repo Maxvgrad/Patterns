@@ -5,7 +5,8 @@ public enum Patterns {
     FACTORY_METHOD("Factory method"), SINGLETON("Singleton"), BUILDER("Builder"),
     PROTOTYPE("Prototype"),
     /*Structural patterns*/
-    BRIGE("Brige"), ADAPTER("Adapter"), COMPOSITE("Composite"), FACADE("Facade");
+    BRIGE("Brige"), ADAPTER("Adapter"), COMPOSITE("Composite"), FACADE("Facade"),
+    DECORATOR("Decorator"), FLYWEIGHT("Flyweight");
 
     Patterns(String name){
         this.name = name;
