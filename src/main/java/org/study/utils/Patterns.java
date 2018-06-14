@@ -6,7 +6,7 @@ public enum Patterns {
     PROTOTYPE("Prototype"),
     /*Structural patterns*/
     BRIGE("Brige"), ADAPTER("Adapter"), COMPOSITE("Composite"), FACADE("Facade"),
-    DECORATOR("Decorator"), FLYWEIGHT("Flyweight");
+    DECORATOR("Decorator"), FLYWEIGHT("Flyweight"), PROXY("Proxy");
 
     Patterns(String name){
         this.name = name;

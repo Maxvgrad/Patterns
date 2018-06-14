@@ -10,6 +10,7 @@ import org.study.patterns.structural.composite.CompositePattern;
 import org.study.patterns.structural.decorator.DecoratorPattern;
 import org.study.patterns.structural.facade.FacadePattern;
 import org.study.patterns.structural.flyweight.FlyweightPattern;
+import org.study.patterns.structural.proxy.ProxyPattern;
 import org.study.utils.Patterns;
 
 public class PatternsFactory {
@@ -27,6 +28,7 @@ public class PatternsFactory {
             case FACADE: return new FacadePattern();
             case DECORATOR: return new DecoratorPattern();
             case FLYWEIGHT: return new FlyweightPattern();
+            case PROXY: return new ProxyPattern();
             default: throw new IllegalArgumentException(
                     "Pattern '" + pattern + "' is not found.");
         }
