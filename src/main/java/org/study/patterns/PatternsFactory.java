@@ -1,5 +1,6 @@
 package org.study.patterns;
 
+import org.study.patterns.creational.abstractfactory.AbstractFactoryPattern;
 import org.study.patterns.creational.builder.BuilderPattern;
 import org.study.patterns.creational.factorymethod.FactoryMethodPattern;
 import org.study.patterns.creational.prototype.PrototypePattern;
@@ -20,6 +21,7 @@ public class PatternsFactory {
         switch(pattern) {
             case BRIGE: return new BrigePattern();
             case FACTORY_METHOD: return new FactoryMethodPattern();
+            case ABSTRACT_FACTORY: return new AbstractFactoryPattern();
             case SINGLETON: return new SingletonPattern();
             case BUILDER: return new BuilderPattern();
             case PROTOTYPE: return new PrototypePattern();
