@@ -10,5 +10,5 @@ abstract class PowerPlant implements Powerable {
     protected abstract void startPlant();
     protected abstract void shutDownPlant();
     protected abstract void maintainPlant();
-    
+
 }

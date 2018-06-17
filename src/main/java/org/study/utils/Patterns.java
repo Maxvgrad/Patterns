@@ -6,13 +6,15 @@ public enum Patterns {
     PROTOTYPE("Prototype"), ABSTRACT_FACTORY("Abstract factory"),
     /*Structural patterns*/
     BRIGE("Brige"), ADAPTER("Adapter"), COMPOSITE("Composite"), FACADE("Facade"),
-    DECORATOR("Decorator"), FLYWEIGHT("Flyweight"), PROXY("Proxy");
+    DECORATOR("Decorator"), FLYWEIGHT("Flyweight"), PROXY("Proxy"),
+    /*Behabioral patterns*/
+    STRATEGY("Strategy");
 
+    private String name;
     Patterns(String name){
         this.name = name;
     }
 
-    private String name;
 
     @Override
     public String toString() {

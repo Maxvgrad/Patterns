@@ -1,5 +1,6 @@
 package org.study.patterns;
 
+import org.study.patterns.behavioral.StrategyPattern;
 import org.study.patterns.creational.abstractfactory.AbstractFactoryPattern;
 import org.study.patterns.creational.builder.BuilderPattern;
 import org.study.patterns.creational.factorymethod.FactoryMethodPattern;
@@ -31,6 +32,7 @@ public class PatternsFactory {
             case DECORATOR: return new DecoratorPattern();
             case FLYWEIGHT: return new FlyweightPattern();
             case PROXY: return new ProxyPattern();
+            case STRATEGY: return new StrategyPattern();
             default: throw new IllegalArgumentException(
                     "Pattern '" + pattern + "' is not found.");
         }

@@ -3,8 +3,6 @@ package org.study.patterns.creational.builder;
 import org.javamoney.moneta.Money;
 import org.study.utils.Cms;
 
-import javax.money.Monetary;
-
 public class EnterpriseWebSiteBuilder extends WebSiteBuilder{
     @Override
     protected void setName() {
