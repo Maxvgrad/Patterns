@@ -1,4 +1,4 @@
-package org.study.patterns.behavioral;
+package org.study.patterns.behavioral.strategy;
 
 import org.study.entities.factories.CharacterFactory;
 import org.study.entities.weapon.KnifeBehaviour;
