@@ -8,7 +8,7 @@ public enum Patterns {
     BRIGE("Brige"), ADAPTER("Adapter"), COMPOSITE("Composite"), FACADE("Facade"),
     DECORATOR("Decorator"), FLYWEIGHT("Flyweight"), PROXY("Proxy"),
     /*Behabioral patterns*/
-    STRATEGY("Strategy"), CHAINOFRESP("Chain of responsibility");
+    STRATEGY("Strategy"), CHAINOFRESP("Chain of responsibility"), COMMAND("Command");
 
     private String name;
     Patterns(String name){

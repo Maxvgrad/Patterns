@@ -39,6 +39,7 @@ public class PatternsFactory {
             case PROXY: return new ProxyPattern();
             case STRATEGY: return new StrategyPattern();
             case CHAINOFRESP: return new ChainOfRespPattern();
+            case COMMAND: return new CommandPattern();
             default: throw new IllegalArgumentException(
                     "Pattern '" + pattern + "' is not found.");
         }
