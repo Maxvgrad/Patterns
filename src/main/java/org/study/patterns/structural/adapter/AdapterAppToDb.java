@@ -3,6 +3,12 @@ package org.study.patterns.structural.adapter;
 import org.study.entities.databases.Database;
 
 public class AdapterAppToDb extends Application implements Database {
+
+    @Override
+    public Object select(int id) {
+        return null;
+    }
+
     @Override
     public void add(Object obj) {
         addObj(obj);
@@ -11,5 +17,25 @@ public class AdapterAppToDb extends Application implements Database {
     @Override
     public Object remove(int id) {
         return removeObj(id);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
