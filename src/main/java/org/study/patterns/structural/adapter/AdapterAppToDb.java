@@ -5,7 +5,7 @@ import org.study.entities.databases.Database;
 public class AdapterAppToDb extends Application implements Database {
 
     @Override
-    public Object select(int id) {
+    public Object select(Long id) {
         return null;
     }
 
@@ -15,7 +15,7 @@ public class AdapterAppToDb extends Application implements Database {
     }
 
     @Override
-    public Object remove(int id) {
+    public Object remove(Long id) {
         return removeObj(id);
     }
 

@@ -4,7 +4,7 @@ public interface Database<T> {
 
     void add(T obj);
 
-    T select(int id);
+    T select(Long id);
 
-    T remove(int id);
+    T remove(Long id);
 }

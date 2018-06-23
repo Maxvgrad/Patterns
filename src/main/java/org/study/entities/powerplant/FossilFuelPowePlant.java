@@ -2,10 +2,10 @@ package org.study.entities.powerplant;
 
 import org.study.entities.countable.Power;
 
-public class NuclearPowerPlant extends PowerPlant {
+public class FossilFuelPowePlant extends PowerPlant implements Powerable {
 
-    public NuclearPowerPlant() {
-        super("Nuclear power plant");
+    public FossilFuelPowePlant() {
+        super("FossilFuel power plant");
     }
 
     @Override

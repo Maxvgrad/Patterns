@@ -5,7 +5,7 @@ public class Application<T> {
         System.out.println("App add object");
     }
 
-    public T removeObj(int id) {
+    public T removeObj(Long id) {
         System.out.println("Remove object: " + id);
         return null;
     }

@@ -2,11 +2,10 @@ package org.study.patterns.behavioral.command;
 
 import org.study.entities.databases.Database;
 
-public class SelectCommand<T> implements Command<T> {
-
+public class RemoveCommand<T> implements Command<T>{
     private Database<T> database;
 
-    public SelectCommand(Database<T> database) {
+    public RemoveCommand(Database<T> database) {
         this.database = database;
     }
 
@@ -16,12 +15,12 @@ public class SelectCommand<T> implements Command<T> {
     }
 
     @Override
-    public T execute(T arg) {
-        throw new UnsupportedOperationException();
+    public T execute(Long arg) {
+        return database.remove(arg);
     }
 
     @Override
-    public T execute(Long arg) {
-        return database.select(arg);
+    public T execute(T obj) {
+        throw new UnsupportedOperationException();
     }
 }

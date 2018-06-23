@@ -10,7 +10,7 @@ public class AdapterPattern implements Pattern{
         Database<Developer> db = new AdapterAppToDb();
 
         db.add(null);
-        db.remove(2);
+        db.remove(2L);
 
     }
 }
