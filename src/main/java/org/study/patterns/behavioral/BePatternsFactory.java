@@ -5,6 +5,7 @@ import org.study.patterns.Pattern;
 import org.study.patterns.behavioral.chainofresp.ChainOfRespPattern;
 import org.study.patterns.behavioral.command.CommandPattern;
 import org.study.patterns.behavioral.interpreter.InterpreterPattern;
+import org.study.patterns.behavioral.observer.ObserverPattern;
 import org.study.patterns.behavioral.strategy.StrategyPattern;
 import org.study.utils.PatternCategories;
 import org.study.utils.Patterns;
@@ -21,6 +22,7 @@ public class BePatternsFactory implements Factory {
             case COMMAND:
                 return new CommandPattern();
             case INTERPRETER: return new InterpreterPattern();
+            case OBSERVER: return new ObserverPattern();
             default: return null;
         }
     }
