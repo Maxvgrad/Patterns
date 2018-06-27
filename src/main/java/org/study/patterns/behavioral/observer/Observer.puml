@@ -1,0 +1,24 @@
+@startuml
+
+interface Subject {
+    subscribe(Observer o)
+    unsubscribe(Observer o)
+    getData(Object o)
+}
+interface Observer {
+    update()
+}
+
+class ConcreteSubject {
+    List<Observer> subscribers
+}
+class ConcreteObserver {
+    Subject subject
+}
+
+Subject <|-- ConcreteSubject
+'ConcreteObserver <--* ConcreteSubject
+Observer <|-- ConcreteObserver
+'ConcreteObserver o--> ConcreteSubject
+
+@enduml
