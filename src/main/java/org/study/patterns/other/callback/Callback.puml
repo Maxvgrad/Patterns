@@ -1,0 +1,17 @@
+@startuml
+
+
+abstract class Task {
+void executeWith(Callback c)
+abstract void execute()
+}
+
+class SimpleTask {
+void execute()
+}
+
+interface Callback {
+void execute()
+}
+
+@enduml

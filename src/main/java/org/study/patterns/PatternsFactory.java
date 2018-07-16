@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.study.patterns.behavioral.BePatternsFactory;
 import org.study.patterns.creational.CrPatternFactory;
+import org.study.patterns.other.OtherPatternFactory;
 import org.study.patterns.structural.StrPatternFactory;
 import org.study.utils.PatternCategories;
 import org.study.utils.Patterns;
@@ -36,6 +37,7 @@ public class PatternsFactory {
             case BEHAVIORAL: return new BePatternsFactory();
             case CREATIONAL: return new CrPatternFactory();
             case STRUCTURAL: return new StrPatternFactory();
+            case OTHER:      return new OtherPatternFactory();
         }
         throw new IllegalArgumentException(
                 String.format("Pattern category '%s' does not exists", pc.name()));

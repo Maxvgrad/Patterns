@@ -13,7 +13,7 @@ public class Main {
     private final static Logger LOGGER = LoggerFactory.getLogger(Utils.getClassName());
     public static void main(String[] args) {
         LOGGER.info("Start program");
-        Pattern pattern = PatternsFactory.createPattern(OBSERVER, PatternCategories.BEHAVIORAL);
+        Pattern pattern = PatternsFactory.createPattern(CALLBACK, PatternCategories.BEHAVIORAL);
         pattern.execute();
     }
 }

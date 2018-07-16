@@ -9,7 +9,10 @@ public enum Patterns {
     DECORATOR("Decorator"), FLYWEIGHT("Flyweight"), PROXY("Proxy"),
     /*Behabioral patterns*/
     STRATEGY("Strategy"), CHAINOFRESP("Chain of responsibility"), COMMAND("Command"),
-    INTERPRETER("Interpreter"), OBSERVER("Observer");
+    INTERPRETER("Interpreter"), OBSERVER("Observer"),
+    /*Other pattern*/
+    CALLBACK("Callback");
+
 
     private String name;
     Patterns(String name){
