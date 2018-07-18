@@ -1,0 +1,19 @@
+@startuml
+
+class Client
+interface Target {
+void request()
+}
+class Adapter {
+Adaptee adaptee
+void request()
+}
+class Adaptee {
+specificRequest()
+}
+
+Target --o Client
+Target <|.. Adapter
+Adapter o-- Adaptee
+
+@enduml
